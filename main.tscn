@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://eg3joas5bo3"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_v2qmm"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_v2qmm")
+metadata/_edit_group_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.780392, 0.435294, 1)
+
+[node name="Header" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 26.0
+grow_horizontal = 2
+text = "Press a button"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextHelper" type="Label" parent="CanvasLayer"]
+offset_top = 213.0
+offset_right = 359.0
+offset_bottom = 239.0
+text = "Button Pressed"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="InputMessage" type="Label" parent="CanvasLayer"]
+offset_top = 245.0
+offset_right = 359.0
+offset_bottom = 268.0
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
